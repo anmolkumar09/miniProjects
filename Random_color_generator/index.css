@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+   
+    /* font-size: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+h1{
+   
+    background-color: antiquewhite;
+    padding: 2rem;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 3rem;
+}
+button{
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    /* transition: backgorund-color,0.4s; */
+
+}

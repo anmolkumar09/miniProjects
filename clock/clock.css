@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+body
+{
+    background-color: black;
+
+    /*yha per meri clock center me ajayegi..*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* eski help se mera scrollbar remove hoajega pura ek page me hoga....*/
+}
+.clock{
+    background-color:cadetblue;
+    color:rgb(0, 0, 0);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /*isse hamara circle banega*/
+    font-weight: bold;
+    border: 4px solid green;
+
+    position: relative;
+
+}
+.clock .number{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* background-color: blue; */
+    transform: rotate(var(--rotation)); /* ye maine yhe pe variable declare kiya phir eski help se pe number ko unki exact place pe lyunga. kaise phele maine background color se pata laga*/
+    --rotation: 0;
+
+    font-size: 1.5rem;
+}
+.clock .number1{--rotation: 30deg} 
+.clock .number2{--rotation: 60deg} 
+.clock .number3{--rotation: 90deg}
+.clock .number4{--rotation: 120deg}
+.clock .number5{--rotation: 150deg}
+.clock .number6{--rotation: 180deg}
+.clock .number7{--rotation: 210deg}
+.clock .number8{--rotation: 240deg}
+.clock .number9{--rotation: 270deg}
+.clock .number10{--rotation: 300deg}
+.clock .number11{--rotation: 330deg}
+.clock .number12{--rotation: 360deg}
+
+.clock .hand{
+    --rotation:0;
+    position: absolute;
+   left: 50%;
+   bottom: 50%;
+  
+   background-color: black;
+   transform-origin: bottom; /*iski help se mere hour hand pura ghumega */
+   transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border: 1px solid white;
+
+   z-index: 10; /* iski help se hamare hour hand 12 ke opar ajayega  jasie real clock me hota hai sui behind me nhi rheage.*/
+}
+.clock .hand.second{
+   width: 5px;
+   height: 40%;
+   background-color: red;
+}
+
+.clock .hand.Minute{
+    width: 7px;
+    height: 45%;
+    background-color: black;
+ }
+
+ .clock .hand.Hour{
+    width: 10px;
+    height: 30%;
+    background-color: blue;
+ }
+
+ /* below code is for only dot in clock....*/
+ .clock::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: pink;
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+ }

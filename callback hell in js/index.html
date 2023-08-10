@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+    background: #fff;
+    color: #000;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.dark-mode{
+    background: #000;
+    color: #fff;
+}
+</style>
+<script>
+    function darkmode(){
+    var SetTheme = document.body;
+    SetTheme.classList.toggle("dark-mode")
+    var theme;
+    if(SetTheme.classList.contains("dark-mode")){
+        console.log("Dark mode");
+        theme = "DARK";
+    }else{
+        console.log("Light mode");
+        theme = "LIGHT";
+    }
+    // save to localStorage
+    localStorage.setItem("PageTheme", JSON.stringify(theme));
+    // ensure you convert to JSON like i have done -----JSON.stringify(theme)
+}
+
+setInterval(() => {
+    let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
+    console.log(GetTheme);
+    if(GetTheme === "DARK"){
+        document.body.classList = "dark-mode";
+    }else{
+        document.body.classList = "";
+    }
+}, 5);
+
+
+</script>
+</head>
+<body>
+    <button id="mybtn" onclick="darkmode()">Dark</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur qui quibusdam minus optio error reprehenderit, sit, vero possimus quaerat aut voluptatem cumque. Ullam laborum aspernatur sunt perferendis, ipsam ab.</p>
+
+</body>
+</html>

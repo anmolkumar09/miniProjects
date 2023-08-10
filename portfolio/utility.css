@@ -1,0 +1,48 @@
+.flex{
+    display: flex;
+}
+.align_items{
+    align-items: center;
+}
+.justify_center{
+    justify-content: center;
+}
+.justify_content{
+    justify-content: space-between;
+}
+.btn{
+    /* ye wala button common h eski saari property jitne bi button h usme use hogi. */
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all 0.4s; /*jitne bhi button h uspe lage ga..*/
+}
+.btn_primary{
+    background-color: var(--primary);
+    
+}
+.btn_secondary{
+    background-color: var(--dark);
+    border: 3px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn_primary:hover{
+    background-color: var(--dark);
+    border: 3px solid var(--primary);
+    color: var(--primary);
+}
+.btn_secondary:hover{
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.flex-1{
+    /* is prperty se mere text right me shift ho jayega */
+    flex: 1;
+}

@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: goldenrod;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 2rem;
+  text-decoration: underline;
+  font-weight: bolder;
+  padding: 10px;
+
+  animation: pop 2s ease 1000ms 1 normal none;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  background: #40e0d0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 35rem;
+  width: 40rem;
+  border-radius: 2rem;
+}
+.main:hover {
+  /* box-shadow: 10px 10px 25px white; */
+  box-shadow: 22px 10px 14px 4px wheat;
+  transition: 0.5s;
+}
+#cityInput {
+  font-size: 2rem;
+  margin: 1rem;
+}
+button {
+  font-size: 1.5rem;
+  border: unset;
+  cursor: pointer;
+  padding: 1rem;
+}
+button:hover {
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 2rem;
+  border: 3px solid beige;
+  color: black;
+  transition: 0.5s;
+}
+.display {
+  background-color: rgba(125, 100, 75, 0.5);
+  text-align: center;
+  margin: 10px;
+  height: 23rem;
+  border-radius: 20px;
+}
+p {
+  padding: 10px;
+  font-size: 2rem;
+  word-spacing: 3px;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+h2 {
+  padding-bottom: 3rem;
+  font-size: 2rem;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.city_text {
+  border-radius: 20px;
+  padding: 7px;
+}
+
+/* responsive Part */
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 1rem;
+  }
+  #cityInput {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  h2 {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .display {
+    height: 15rem;
+  }
+  .main {
+    height: 28rem;
+    width: 31rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 555px) {
+  .navbar {
+    font-size: 1rem;
+  }
+  #cityInput {
+    font-size: 1.2rem;
+  }
+  button {
+    font-size: 0.8rem;
+  }
+  h2 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .display {
+    height: 12rem;
+  }
+  .main {
+    height: 26rem;
+    width: 25rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar {
+    font-size: 1rem;
+  }
+  #cityInput {
+    font-size: 1.2rem;
+  }
+  button {
+    font-size: 0.8rem;
+  }
+  h2 {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .display {
+    height: 12rem;
+    width: 22rem;
+  }
+  .main {
+    height: 25rem;
+    width: 23rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #cityInput {
+    font-size: 1rem;
+    width: 13rem;
+  }
+  .navbar {
+    width: 15rem;
+    margin-left: 2rem;
+  }
+  .display {
+    width: 18rem;
+  }
+  .main {
+    height: 22rem;
+    width: 20.5rem;
+  }
+}

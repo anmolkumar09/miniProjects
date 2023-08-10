@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="index.js" defer></script>
+</head>
+<body>
+   
+
+    <!-- below div is created for responsive only this worj done after whole portfolio making
+    so always compelete yor project then create this one  -->
+    <div class="site_menu">
+        <button class="hambuger">
+            <img src="/portfolio/images/hamberger.svg" alt="">
+        </button>
+
+        <div class="mobile_nav">
+
+            <!-- ye wala button navbar ko close karne ke liye  -->
+            <button class="times"><img src="/portfolio/images/times.svg" alt=""></button>
+
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+        
+     <!-- header part -->
+     <header>
+     <div class="container">
+ 
+     <!-- ye niche flex and align_items islye use kar rhe h kyuki mereko baar baar use karna h -->
+     <nav id="main-nav" class="flex align_items justify_content">
+ 
+         <div class="left flex align_items justify_content">
+ 
+             <div class="brand_Logo">
+                 <img src="images/logo.svg" alt="">
+             </div>
+     
+             <!-- links -->
+             <div class="links">
+                 <a href="#">Home</a>
+                 <a href="#">About</a>
+                 <a href="#">Service</a>
+                 <a href="#">Page</a>
+                 <a href="#">Blog</a>
+             </div>
+ 
+         </div>
+ 
+         <div class="right">
+             <button class="btn btn_primary">Contact</button>
+         </div>
+     </nav>
+ 
+     <div class="hero flex align_items justify-content">
+         <div class="left flex-1 flex justify_center">
+             <img src="images/man.png" alt="">
+ 
+         </div>
+ 
+         <div class="right flex-1">
+ 
+             <!-- ye mereko header ki photo ke right side me chaiye to me simply parent class means hero class ko flex karunga -->
+             <h6 class="speacial_text">LOREM.</h6>
+             <h1>I'm Creative<span> Desginer</span></h1> 
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, veniam! Fuga, quae fugiat? Dolorem, consequuntur itaque nemo voluptatem quas rem.</p>
+             <div>
+                 <button class="btn btn_secondary">Download CV</button>
+             </div>
+         </div>
+       </div>
+     </div>
+     </header>
+ 
+    <section class="about">
+ 
+     <div class="container flex align_items inner_wrap"> <!-- this inner_wrap is used to responsive for mobile screen-->
+ 
+         <div class="flex-1"> 
+             <img class="about_me_img" src="images/man-2.png" alt="">
+         </div>
+ 
+         <div class="flex-1">
+             <h1>About <span>Me</span></h1>
+             <h3>Hello I'am Lorem</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae incidunt exercitationem magni perferendis delectus, ea dolorem debitis quos architecto quas voluptates. Est quibusdam velit vero eveniet natus expedita? Quis veritatis numquam eius laborum necessitatibus dolorum suscipit provident cum illum, quos doloremque porro magnam eos possimus beatae, atque itaque voluptates. Suscipit?</p>
+ 
+             <div class="social_media">
+                
+               
+                <a href="#"><img src="/portfolio/images/facebook.svg" alt=""></a>
+                <a href="#"><img src="/portfolio/images/facebook.svg" alt=""></a>
+ 
+                <a href="#"><img src="/portfolio/images/facebook.svg" alt=""></a>
+ 
+                <a href="#"><img src="/portfolio/images/facebook.svg" alt=""></a>
+             </div>
+         </div>
+     </div>
+    </section>
+ 
+    <!-- Grid Section / service section-->
+    <section class="services">
+ 
+     <div class="container">
+         <h1 class="section_heading"><span>Our</span> Services</h1>
+         
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+ 
+         <!-- yha pe ab grid kasie use karte wo use karenge  card wrapper ka matlab wrapper container -->
+         <div class="card_wrapper"> 
+ 
+             <div class="card">
+                 <img src="images/brush.svg" alt="">
+                 <h2>Graphic Desginer</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempore!</p>
+             </div>
+ 
+             <div class="card">
+                 <img src="images/brush.svg" alt="">
+                 <h2>Data Science</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempore!</p>
+             </div>
+ 
+             <div class="card">
+                 <img src="images/brush.svg" alt="">
+                 <h2>Blockchain Development</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempore!</p>
+             </div>
+ 
+             <div class="card">
+                 <img src="images/brush.svg" alt="">
+                 <h2>Android Development</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempore!</p>
+             </div>
+ 
+             <div class="card">
+                 <img src="images/brush.svg" alt="">
+                 <h2>Machine Learing</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempore!</p>
+             </div>
+ 
+             <div class="card">
+                 <img src="images/brush.svg" alt="">
+                 <h2>Web Development</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempore!</p>
+             </div>
+         </div>
+     </div>
+    </section>
+ 
+    <!-- Freelance section -->
+    <section class="freelance_section">
+ 
+      <h1>I am Available for Freelance</h1>
+ 
+      <p>We Provide High Quality Website's for Our Clients.</p>
+ 
+      <button class=" btn btn_primary">Download</button>
+    </section>
+ 
+    <!-- Review section -->
+    <section class="reviews">
+     <div class="container ">
+ 
+         <!-- ye pe niche mera same section heading ke tahara karna tha to mene same section_heading class us kari h.. -->
+         <h1 class="section_heading"><span >Our</span> Client</h1>
+         <p>We provide High Quality Website's for our client's</p>
+ 
+         <!-- below i'll use utility:
+ 
+              class=" flex align_items justify_center" -->
+ 
+              
+                 <div class="slider">
+ 
+                     <div class="slide">
+                         <img src="/portfolio/images/lady.png"
+                         " alt="">
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur repellendus laboriosam laudantium ipsa excepturi voluptas necessitatibus ratione error assumenda a?</p>
+             
+                         <span>Yuki Deol, Texas</span>
+                     </div>
+ 
+                     <div class="slide">
+                         <img src="/portfolio/images/lady.png"
+                         " alt="">
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur repellendus laboriosam laudantium ipsa excepturi voluptas necessitatibus ratione error assumenda a?</p>
+             
+                         <span>Yuki Deol, Texas</span>
+                     </div>
+ 
+                     <div class="slide">
+                         <img src="/portfolio/images/lady.png"
+                         " alt="">
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur repellendus laboriosam laudantium ipsa excepturi voluptas necessitatibus ratione error assumenda a?</p>
+             
+                         <span>Yuki Deol, Texas</span>
+                     </div>
+ 
+                     <div class="slide">
+                         <img src="/portfolio/images/lady.png"
+                         " alt="">
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur repellendus laboriosam laudantium ipsa excepturi voluptas necessitatibus ratione error assumenda a?</p>
+             
+                         <span>Yuki Deol, Texas</span>
+                     </div>
+                     <div class="slider-dots"></div>
+                 </div>
+    </section>
+    
+    <!-- Work section -->
+    <section class="work">
+     <div class="container">
+         <h2 class="section_heading"><span>Our </span>Work</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quae.</p>
+     </div>
+    
+     <div class="card-wrapper">
+         <div class="card">
+             <div class="overlay">
+                 category
+                 <a href="">Web Development</a>
+             </div>
+             <img src="/portfolio/images/ph-1.png" alt="">
+         </div>
+ 
+         <div class="card">
+             <div class="overlay">
+                 category
+                 <a href="">Cloud Computting</a>
+             </div>
+             <img src="/portfolio/images/ph-2.png" alt="">
+         </div>
+ 
+         <div class="card">
+             <div class="overlay">
+                 category
+                 <a href="">Data Analyst</a>
+             </div>
+             <img src="/portfolio/images/ph-3.png" alt="">
+         </div>
+ 
+         <div class="card">
+             <div class="overlay">
+                 category
+                 <a href="">Web 3</a>
+             </div>
+             <img src="/portfolio/images/ph-1.png" alt="">
+         </div>
+ 
+         <div class="card">
+             <div class="overlay">
+                 category
+                 <a href="">machine Learing</a>
+             </div>
+             <img src="/portfolio/images/ph-1.png" alt="">
+         </div>
+ 
+         <div class="card">
+             <div class="overlay">
+                 category
+                 <a href="">Android Development</a>
+             </div>
+             <img src="/portfolio/images/ph-1.png" alt="">
+         </div>
+     </div>
+    </section>
+ 
+ <!-- Blog Part -->
+ 
+    <section class="blog">
+     <div class="container">
+         <h2 class="section_heading"><span>Our </span>Blogs</h2>
+         <p>Our Blogs are based on Trending technology.</p>
+     </div>
+ 
+     <div class="card_wrapper">
+         <div class="card">
+ 
+             <div class="img_card">
+                 <img src="/portfolio/images/article-ph-1.png" alt="">
+             </div>
+ 
+             <div class="card_content">
+ 
+                 <!-- mujhe apne h1 click able chaiye so i will put inside in <a> tag -->
+                     <a href="">
+                         <h1>Machine Learing</h1>
+                     </a>
+                 <span>27th oct 2020.</span>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eveniet animi rerum hic. Quos debitis totam mollitia ex, ducimus inventore nostrum quo ut tempora dolore magnam! Possimus soluta esse magnam.</p>
+                 <a href="">Read More</a>
+             </div>
+         </div>
+ 
+         <div class="card">
+ 
+             <div class="img_card">
+                 <img src="/portfolio/images/article-ph-3.png" alt="">
+             </div>
+ 
+             <div class="card_content">
+ 
+                 <!-- mujhe apne h1 click able chaiye so i will put inside in <a> tag -->
+                     <a href="">
+                         <h1>Big Data</h1>
+                     </a>
+                 <span>27th oct 2020.</span>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eveniet animi rerum hic. Quos debitis totam mollitia ex, ducimus inventore nostrum quo ut tempora dolore magnam! Possimus soluta esse magnam.</p>
+                 <a href="">Read More</a>
+             </div>
+         </div>
+ 
+         <div class="card">
+ 
+             <div class="img_card">
+                 <img src="/portfolio/images/article-ph-2.png" alt="">
+             </div>
+ 
+             <div class="card_content">
+ 
+                 <!-- mujhe apne h1 click able chaiye so i will put inside in <a> tag -->
+                     <a href="">
+                         <h1>AI / ML</h1>
+                     </a>
+                 <span>27th oct 2020.</span>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eveniet animi rerum hic. Quos debitis totam mollitia ex, ducimus inventore nostrum quo ut tempora dolore magnam! Possimus soluta esse magnam.</p>
+                 <a href="">Read More</a>
+             </div>
+         </div>
+     </div>
+    </section>
+ 
+    <!-- Contact section -->
+    <section class="contact">
+     <div class="container">
+         <h1 class="section_heading">Contact <span>Us</span></h1>
+         <p>Lorem ipsum dolor sit amet.</p>
+ 
+         <div class="card_wrapper">
+             <div class="card">
+                 <img src="/portfolio/images/phone-2.svg" alt="">
+                 <h1>Call Us On</h1>
+                 <h3>+9145360110</h3>
+             </div>
+ 
+             <div class="card">
+                 <img src="/portfolio/images/msg.svg" alt="">
+                 <h1>Email at us</h1>
+                 <h3>xyz23@gmail.com</h3>
+             </div>
+ 
+             <div class="card">
+                 <img src="/portfolio/images/map.svg" alt="">
+                 <h1>Vist Office</h1>
+                 <h3>45, street,cleveland Canada</h3>
+             </div>
+         </div>
+         <form action="">
+             <div class="input_wrap">
+                 <input type="text" name="" id="" placeholder="Your Name">
+     
+                 <input type="text" name="" id="" placeholder="Your Email">
+             </div>
+     
+             <div class="input_wrap2">
+                 <input type="text" name="" id="" placeholder="subject">
+     
+                 <textarea name="" id="" cols="30" rows="7" placeholder="Message"></textarea>
+             </div>
+             <div class="flex justify_center">
+ 
+                 <button class="btn btn_primary ">submit</button>
+             </div>
+         </form>
+        
+     </div>
+ 
+    </section>
+ 
+    <!-- Footer Part -->
+    <footer>
+     <img  src="/portfolio/images/logo-2.svg" alt="" class="footer_logo">
+ 
+     <div class="footer_socials">
+         <a href="#"><img src="/portfolio/images/facebook.svg" alt=""></a>
+         <a href="#"><img src="/portfolio/images/facebook.svg" alt=""></a>
+ 
+         <a href="#"><img src="/portfolio/images/facebook.svg" alt=""></a>
+ 
+         <a href="#"><img src="/portfolio/images/facebook.svg" alt=""></a>
+     </div>
+        <div class="footer_text">
+         <p>copyright 2019 &#169;. All Rights Reserved.</p>
+        </div>
+     </footer>
+   </div>
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+</body>
+</html>

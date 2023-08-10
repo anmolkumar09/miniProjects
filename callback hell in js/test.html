@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    
+    
+</head>
+<body>
+    <p class="text">
+        <h1 class="h1">heading1</h1>
+        <h1 class="h2">heading2</h1>
+        <h1 class="h3">heading3</h1>
+        <h1 class="h4">heading4</h1>
+        <h1 class="h5">heading5</h1>
+    </p>
+
+    <button>click</button>
+    <!-- <button class="btn">click</button> -->
+
+    <script>
+
+
+         // Call Back Hell..
+const h1 = document.querySelector(".h1");
+const h2 = document.querySelector(".h2");
+const h3 = document.querySelector(".h3");
+const h4 = document.querySelector(".h4");
+const h5 = document.querySelector(".h5");
+// console.log(h5);
+const btn = document.querySelector("button");
+// const btn2 = document.querySelector(".btn");
+
+function test(element,bgColor,color,text,time)
+{
+    setTimeout(()=>{
+        element.style.color = color;
+        element.style.backgroundColor = bgColor;
+        element.textContent = text;
+    },time);
+    
+}
+
+btn.addEventListener("click",()=>{
+    test(h1,"red","yellow","one",1000);
+    test(h2,"blue","green","two",2000);
+    test(h3,"green","yellow","three",3000);
+    test(h4,"yellow","white","four",4000);
+   test(h5,"gold","crimson","five",5000);
+   
+})
+
+
+
+    </script>
+   
+</body>
+</html>

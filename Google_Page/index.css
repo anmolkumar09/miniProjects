@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+body{
+    background-color: seagreen;
+    font-family: 'Roboto Mono', monospace;
+}
+.main{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.h1{
+    background-color: gold;
+    border-radius: 50px;
+    font-size: 3rem;
+}
+.image2{
+    width: 600px;
+    height: 790px;
+    border: 5px solid black;
+    margin-left: 20px;
+    border-radius: 20px;
+    
+}
+.image1{
+    border-radius: 20px;
+    border: 5px solid black;
+}
+.heading2{
+    /* padding-top: 2rem; */
+    font-weight: bolder;
+    background-color: gold;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+ul{
+    font-size: 2rem;
+    font-style: italic;
+    background-color: powderblue;
+    border-radius: 50px
+}
+.image3{
+    width: 50%;
+    height: 50vh;
+    border-radius: 20px;
+    border: 5px solid black;
+    padding-right: 20px;
+}
+.image4{
+    border-radius: 20px;
+    border: 5px solid black;
+}
+ins{
+    margin: 10px;
+}
+.quote{
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: rgb(218, 209, 7);
+    
+    font-weight: bolder;
+}
+.text1{
+    border-radius: 50px;
+    background-color: rgb(28, 209, 137);
+
+}
